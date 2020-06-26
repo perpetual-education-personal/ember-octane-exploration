@@ -2,7 +2,15 @@
 <section class='page-section'>
 <inner-column>
   
-  <h1>{{exampleProperty}} {{model.x}}</h1>
+  <h1>{{exampleProperty}}</h1>
+
+  <ul class='person-list'>
+    {{#each model as |person|}}
+      <li class='person'>
+        <span>{{person.name}}</span> / age: {{person.age}}
+      </li>
+    {{/each}}
+  </ul>
 
 </inner-column>
 </section>
