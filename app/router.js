@@ -15,6 +15,6 @@ Router.map(function() {
   this.route('contact');
   this.route('blog', function() {
     this.route('list', { path: '/' });
-    this.route('detail', { path: '/:post'});
+    this.route('detail', { path: '/:id'});
   });
 });
