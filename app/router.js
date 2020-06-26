@@ -13,4 +13,8 @@ Router.map(function() {
   });
   this.route('about');
   this.route('contact');
+  this.route('blog', function() {
+    this.route('list', { path: '/' });
+    this.route('detail', { path: '/:post'});
+  });
 });
