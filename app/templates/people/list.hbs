@@ -5,9 +5,11 @@
   <h2>The people!</h2>
 
   <ul class='person-list'>
-    {{#each model as |person|}}
+    {{#each @model as |person|}} {{!-- note - look up @ in this case --}}
       <li class='person'>
         <span>{{person.name}}</span> / age: {{person.age}}
+
+        <LinkTo @route='people.detail' @model={{person.name}}>♥</LinkTo>
       </li>
     {{/each}}
   </ul>
