@@ -1,0 +1,23 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color: hsl(100, 100%, 50%);
+}
+
+body {
+  color: var(--color);
+}
+
+// $structure
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex-grow: 1;
+}
