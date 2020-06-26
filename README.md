@@ -1,6 +1,9 @@
 
 # ember-octane-exploration
 
+> Just getting reacquainted with the latest Ember updates and using the json from PE to pull in some data.
+
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
