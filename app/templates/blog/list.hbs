@@ -1,10 +1,18 @@
 
-<ul class='post-list'>
-  {{#each model as |post|}}
-    <li class='post'>
+<section class='page-section'>
+<inner-column>
 
-      <PostCard @post={{post}} />
+  <h1>Blog</h1>
 
-    </li>
-  {{/each}}
-</ul>
+  <ul class='post-list'>
+    {{#each model as |post|}}
+      <li class='post'>
+
+        <PostCard @post={{post}} />
+
+      </li>
+    {{/each}}
+  </ul>
+
+</inner-column>
+</section>
